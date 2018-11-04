@@ -1,0 +1,305 @@
+/*
+  Custom.css file
+  By Agnel Nieves | http://agnelnieves.com
+*/
+
+
+/****************
+
+  Table of Contents
+
+  00  Text class Styles
+  01  Text ID styles
+  02  Section Styles
+  03  External Libraries Styles (custom)
+  04  Media Queries
+
+
+*****************/
+
+
+/*
+  00
+  Text Class Styles
+*/
+
+#nav{
+    z-index: 1000;
+    position: absolute;
+    color: #3e454c;
+    width: 100%;
+    background: #fff0;
+    /*border-bottom: 2px solid #747474;*/
+    padding: 10px 10px 10px 10px;
+}
+
+#nav span{
+    color: #d9ff00;
+}
+
+.red-dot:before {
+  content: ".";
+  color: #d9ff00;
+}
+
+.breadcrumbs-active {
+    border-bottom: solid 2px #ffffff;
+}
+
+.main-text {
+    font-size: 2.7rem;
+}
+
+.drop-cap {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #d9ff00;
+}
+
+.strong-custom {
+    font-weight: 700;
+    color: #d9ff00;
+}
+
+.typed-text {
+    font-size: 8rem;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.custom-title {
+    padding-top: 1px;
+}
+
+.call-to-action {
+    background-color: #d9ff00;
+    color: white!important;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.button{
+    text-decoration: none;
+    text-align: center;
+    background: #d9ff00;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    z-index: 1000;
+}
+
+
+.button h2 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button h2:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover h2 {
+    color: #fff;
+  padding-right: 25px;
+}
+
+.button:hover h2:after {
+    color: #fff;
+  opacity: 1;
+  right: 0;
+}
+
+
+.nav{
+    background-color: #fff;
+    color: 79818;
+    border: 0;
+}
+
+.call-to-action-dark {
+    background-color: #191b1d;
+    color: white!important;
+    border: 0;
+}
+
+.btn-highlight {
+    color: #d9ff00;
+    background-color: #fff;
+}
+
+.btn-highlight:hover {
+    color: #fff;
+    background-color: #ff7290;
+}
+
+.blog-text {
+    color: #6d747c!important;
+}
+
+.ul-text {
+    color: #79818a;
+}
+
+.breadcrumbs-link {
+    color: #fff!important;
+}
+
+.breadcrumbs-link:hover {
+    border-bottom: solid 2px #ffffff;
+}
+
+
+/*----- Id's---- */
+
+#main-logo {
+    max-width: 300px;
+}
+
+#tab2 a {
+    color: #ffff!important;
+}
+
+
+/*----------------TYPED------------*/
+
+#filters li.active.home-filters {
+    border-color: #d9ff00!important;
+    color: #d9ff00!important;
+}
+
+#filters li.home-filters:hover {
+    border-color: #d9ff00!important;
+    color: #d9ff00!important;
+}
+
+#filters li.home-filters {
+    color: #191b1d;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 8.5rem;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*media queries*/
+
+
+/*smart-phones*/
+
+@media (max-width: 425px) {
+    #main-logo {
+        max-width: 150px;
+    }
+    #main-title {
+        font-size: 1.3rem;
+    }
+    .mobile-center-text {
+        text-align: center;
+    }
+    .typed-text {
+        font-size: 2.3rem;
+    }
+    .typed-cursor {
+        font-size: 2.3rem;
+    }
+}
+
+
+/*Smartphones and tablets*/
+
+@media (max-width: 1023px) {
+    #filters.fixed {
+        top: 35px!important;
+        padding: 7px!important;
+        background-color: rgba(240, 75, 108, 0.95);
+    }
+    #filters li {
+        display: inline-block;
+        position: relative;
+        padding: 0px 7px;
+        color: #f6f7f7;
+    }
+    #filters li.active {
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+    #filters li.active:hover {
+        color: #ffffff;
+    }
+}
+
+
+/*Laptops*/
+
+@media (min-width: 1024px) {
+    #filters.fixed {
+        position: fixed;
+        top: 43px!important;
+        padding: 7px!important;
+        background-color: rgba(240, 75, 108, 0.95);
+    }
+    #filters li {
+        color: #f6f7f7;
+    }
+    #filters li.active {
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+    #filters li.active:hover {
+        color: #ffffff;
+    }
+}
